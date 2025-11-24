@@ -1,6 +1,6 @@
 # ICT_Final_Project
 This is our ICT Course group project.
-We as a group of 4 students from BCS-1J, which consists of:
+We are a group of 4 students from BCS-1J, which consists of:
 - Shaheer Ahmed Sheikh 25K-0569
 - Muhammad Ahmed Shahid 25K-0929
 - Mubashir Saeed Qureshi 25K=0700
