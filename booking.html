@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Gaming Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-links">
+    <a href="ConsolePc.html">PCs & Consoles</a>
+    <a href="Indoor.html">Indoor Games</a>
+</div>
+
+<div class="booking-card">
+    <h2>Complete Your Booking</h2>
+    <p class="note">Fill your details below. All fields required.</p>
+
+    <form id="booking-form">
+        <div class="form-row">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required>
+            <div id="err-name" class="error"></div>
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text" required>
+            <div id="err-email" class="error"></div>
+        </div>
+
+        <div class="form-row">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required>
+            <div id="err-phone" class="error"></div>
+        </div>
+
+        <div class="form-row">
+            <label for="service">Service / Item</label>
+            <input id="service" name="service" type="text" readonly>
+        </div>
+
+        <div class="form-row">
+            <label for="hours">Hours (1-24)</label>
+            <input id="hours" name="hours" type="number" min="1" max="24" required>
+            <div id="err-hours" class="error"></div>
+        </div>
+
+        <div class="form-row">
+            <label for="date">Booking Date</label>
+            <input id="date" name="date" type="date" required>
+            <div id="err-date" class="error"></div>
+        </div>
+
+        <div style="text-align:right;">
+            <button type="submit" class="btn">Submit Booking</button>
+            <a href="ConsolePc.html"><button type="button" class="btn secondary">Cancel</button></a>
+        </div>
+    </form>
+
+    <div id="success" style="display:none; margin-top:12px; padding:10px; background:#e6ffed; border:1px solid #b6f1c6; border-radius:4px;">
+        Booking submitted — thank you! You will receive confirmation shortly.
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

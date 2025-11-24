@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Zone Booking - Indoor Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Gaming Zone Booking</h1>
+    <p>Book Your Gaming Experience!</p>
+</header>
+
+<nav>
+    <a href="ConsolePc.html">Gaming PCs & Consoles</a>
+    <a href="Indoor.html">Indoor Games</a>
+</nav>
+
+<div class="container">
+
+    <div id="indoor" class="section active">
+        <h2>Indoor Games</h2>
+
+        <div class="item-list">
+            <div class="item"><img src="https://de.cornilleau.com/7441-xlarge_default/540-ittf-table.jpg"><h3>Table Tennis</h3><button onclick="openPopup('Table Tennis')">View Details</button></div>
+            <div class="item"><img src="https://alrakham.com/wp-content/uploads/2023/06/image_50453249-scaled.jpg"><h3>Chess</h3><button onclick="openPopup('Chess')">View Details</button></div>
+            <div class="item"><img src="https://leah.pk/cdn/shop/files/Hf545822bac344c3e960fcb5c993d0d23f_e2b9e4ef-6c34-48d6-9be2-aac5c6b3edfa.png?v=1758617917"><h3>Foosball</h3><button onclick="openPopup('Foosball')">View Details</button></div>
+        </div>
+
+        <div class="item-list">
+            <div class="item"><img src="https://www.abcsnooker.co.uk/images/virtuemart/product/star-table-full-sized.jpg"><h3>Snooker</h3><button onclick="openPopup('Snooker')">View Details</button></div>
+            <div class="item"><img src="https://unitedking.co.za/wp-content/uploads/2023/09/header.png"><h3>8 Ball</h3><button onclick="openPopup('8 Ball')">View Details</button></div>
+            <div class="item"><img src="https://www.cosco.in/uploads/products/main_image/carrom_emarald_front_77069256886.png"><h3>Carrom</h3><button onclick="openPopup('Carrom')">View Details</button></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Popup -->
+<div class="popup-bg" id="popup-bg">
+    <div class="popup">
+        <img id="popup-img" src="">
+        <h3 id="popup-title"></h3>
+        <p id="popup-desc"></p>
+        <button onclick="bookItem()">Book</button>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<footer>
+    <p class="footer-bottom">Established in 2025 • Gaming Zone</p>
+    <h2 class="footer-title">Connect with Us!</h2>
+    <div class="footer-container">
+        <div class="footer-left">
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"> <a href="https://instagram.com" target="_blank">Instagram</a></p>
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/500px-Facebook_Logo_%282019%29.png"> <a href="https://facebook.com" target="_blank">Facebook</a></p>
+            <p><img src="https://static.vecteezy.com/system/resources/previews/018/930/582/non_2x/reddit-logo-reddit-icon-transparent-free-png.png"> <a href="https://reddit.com" target="_blank">Reddit</a></p>
+            <p><img src="https://images.seeklogo.com/logo-png/49/2/twitter-x-logo-png_seeklogo-492396.png"> <a href="https://twitter.com" target="_blank">Twitter</a></p>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-right">
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" class="map-icon"> <a href="https://maps.google.com" target="_blank">View on Google Maps</a></p>
+            <p>Phone: 0300-1234567</p>
+            <p>Telephone: 021-1234567</p>
+            <p>Address: Gaming Street XYZ</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

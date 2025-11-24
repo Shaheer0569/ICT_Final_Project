@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Zone Booking - PCs & Consoles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Gaming Zone Booking</h1>
+    <p>Book Your Gaming Experience!</p>
+</header>
+
+<nav>
+    <a href="ConsolePc.html">Gaming PCs & Consoles</a>
+    <a href="Indoor.html">Indoor Games</a>
+</nav>
+
+<div class="container">
+
+    <!-- PCs & Consoles -->
+    <div id="pcs" class="section active">
+        <h2>Gaming PCs & Consoles</h2>
+
+        <h3 class="row-title">PC SETUPS</h3>
+        <div class="item-list">
+            <div class="item"><img src="https://techmatched.pk/wp-content/uploads/2025/02/Darkflash-DY470-Pink-Front-1.webp"><h3>Low Tier PC</h3><button onclick="openPopup('Low Tier PC')">View Details</button></div>
+            <div class="item"><img src="https://techmatched.pk/wp-content/uploads/2025/02/Darkflash-DY470-Pink-Front-1.webp"><h3>Mid Tier PC</h3><button onclick="openPopup('Mid Tier PC')">View Details</button></div>
+            <div class="item"><img src="https://techmatched.pk/wp-content/uploads/2025/02/Darkflash-DY470-Pink-Front-1.webp"><h3>High End PC</h3><button onclick="openPopup('High End PC')">View Details</button></div>
+        </div>
+
+        <h3 class="row-title ps"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/2560px-PlayStation_logo.svg.png"> PLAYSTATION CONSOLES</h3>
+        <div class="item-list">
+            <div class="item"><img src="https://www.esrb.org/wp-content/uploads/2019/05/ps4.png"><h3>PS4</h3><button onclick="openPopup('PS4')">View Details</button></div>
+            <div class="item"><img src="https://gmedia.playstation.com/is/image/SIEPDC/ps4-pro-product-thumbnail-01-en-14sep21?$facebook$"><h3>PS4 Pro</h3><button onclick="openPopup('PS4 Pro')">View Details</button></div>
+            <div class="item"><img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"><h3>PS5</h3><button onclick="openPopup('PS5')">View Details</button></div>
+        </div>
+
+        <h3 class="row-title xbox"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/1200px-Xbox_one_logo.svg.png"> XBOX CONSOLES</h3>
+        <div class="item-list">
+            <div class="item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Xbox_360_S.png/1091px-Xbox_360_S.png"><h3>Xbox 360</h3><button onclick="openPopup('Xbox 360')">View Details</button></div>
+            <div class="item"><img src="https://xboxwire.thesourcemediaassets.com/sites/2/xbox_consle_sensr_controllr_f_transbg_rgb_2013.png"><h3>Xbox One</h3><button onclick="openPopup('Xbox One')">View Details</button></div>
+            <div class="item"><img src="https://cms-assets.xboxservices.com/assets/bc/40/bc40fdf3-85a6-4c36-af92-dca2d36fc7e5.png?n=642227_Hero-Gallery-0_A1_857x676.png"><h3>Xbox Series X</h3><button onclick="openPopup('Xbox Series X')">View Details</button></div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup -->
+<div class="popup-bg" id="popup-bg">
+    <div class="popup">
+        <img id="popup-img" src="">
+        <h3 id="popup-title"></h3>
+        <p id="popup-desc"></p>
+        <button onclick="bookItem()">Book</button>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<footer>
+    <p class="footer-bottom">Established in 2025 • Gaming Zone</p>
+    <h2 class="footer-title">Connect with Us!</h2>
+    <div class="footer-container">
+        <div class="footer-left">
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"> <a href="https://instagram.com" target="_blank">Instagram</a></p>
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/500px-Facebook_Logo_%282019%29.png"> <a href="https://facebook.com" target="_blank">Facebook</a></p>
+            <p><img src="https://static.vecteezy.com/system/resources/previews/018/930/582/non_2x/reddit-logo-reddit-icon-transparent-free-png.png"> <a href="https://reddit.com" target="_blank">Reddit</a></p>
+            <p><img src="https://images.seeklogo.com/logo-png/49/2/twitter-x-logo-png_seeklogo-492396.png"> <a href="https://twitter.com" target="_blank">Twitter</a></p>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-right">
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" class="map-icon"> <a href="https://maps.google.com" target="_blank">View on Google Maps</a></p>
+            <p>Phone: 0300-1234567</p>
+            <p>Telephone: 021-1234567</p>
+            <p>Address: Gaming Street XYZ</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
